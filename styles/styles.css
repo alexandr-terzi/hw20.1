@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Dash Horizon;
+    src: url("../fonts/dash-horizon.otf") format("opentype");
+    }
+
+body {
+    font-family: Dash Horizon;
+    margin: 0;
+    background-image: linear-gradient( 0.3deg,  rgba(6,17,33,1) 1.1%, rgb(30, 68, 156) 97.3% );
+    min-width: 960px;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #d2e229;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000;
+    font-size: 40px;
+}
+
+.slider__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.slider__wrapper .cars__logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider__wrapper .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__wrapper .buttons .arrows {
+    text-align: center;
+}
+
+.slider__wrapper .buttons .start {
+    text-align: center;
+}
+
+.slider__wrapper .buttons .arrows button {
+    margin: 20px 50px 0;
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: all .3s;
+    
+}
+
+.slider__wrapper .buttons .start button {
+    margin: 20px 0 0;
+    width: 300px;
+    height: 220px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: all .3s;
+    
+}
+
+.slider__wrapper .buttons .start button:active {
+    background-color: rgba(86, 145, 212, 0.5);
+}
+
+.slider__wrapper .buttons .arrows button:active {
+    background-color: rgba(255, 255, 255,.5);
+}
+
+.slider__wrapper .buttons .arrows .prev {
+    background: url(../images/prev1.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider__wrapper .buttons .arrows .next {
+    background: url(../images/next1.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider__wrapper .buttons .start .startBtn {
+    background: url(../images/startBtn.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider__wrapper .cars__logo .current {
+    opacity: 1;
+}
+
+.slider__wrapper .cars__logo img {
+    position: absolute;
+    opacity: 0;
+    transition: all .6s;
+    width: 250px;
+    height: 120px;
+}
+
+.cars__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cars__wrapper h2 {
+    color: #6de229;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000;
+    font-size: 32px;
+}
+
+.cars__wrapper .back__button:active {
+    background-color: rgba(86, 145, 212, 0.5);
+}
+
+.cars__wrapper .back__button {
+    background: url(../images/exitBtn.png) center center no-repeat;
+    background-size: cover;
+    margin: 20px 0 0;
+    width: 300px;
+    height: 220px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: all .3s;
+}
